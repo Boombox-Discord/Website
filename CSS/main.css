@@ -1,0 +1,12 @@
+.white {
+    color: white !important;
+}
+
+body {
+    background-color: black;
+}
+
+#button-no-border {
+    outline: none;
+    border-style: none;
+}
