@@ -10,3 +10,17 @@ body {
     outline: none;
     border-style: none;
 }
+
+#no-link-style {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.header {
+    background-image: url(../IMG/Header.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 130px;
+    background-position-x: 700px;
+    box-shadow: 690px 100px 60px 60px black inset;
+}
