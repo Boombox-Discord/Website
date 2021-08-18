@@ -1,43 +1,80 @@
-.white {
-    color: white !important;
-}
-
 body {
-    background-color: black;
+    background-color: #f4dbd8;
 }
 
-#button-no-border {
-    outline: none;
-    border-style: none;
-}
-
-#no-link-style {
-    color: white !important;
-    text-decoration: none !important;
-}
-
-.header {
-    background-image: url(../IMG/Header.gif);
+.header{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url('../IMG/Boombox\ Banner.svg');
     background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: 130px;
-    background-position-x: 700px;
-    box-shadow: 690px 100px 60px 60px black inset;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 512px;
 }
 
-hr {
-    background-color: white;
+.text-header {
+    max-width: 50%;
+    padding-bottom: 1%;
 }
 
-.table-custom {
-    max-width: 1000px;
+.fade {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+    /* transition-delay: 0.5s; */
 }
 
-.thead-custom {
-    background-color: rgb(19, 19, 19);
-    color: white;
+.fade.visible {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
-.black-bg {
-    background-color: rgb(19, 19, 19);
+.container-padding {
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.img-info {
+    height: 350px;
+}
+
+.row-padding {
+    padding-top: 5%;
+}
+
+.text-container {
+    height: 200px;
+    position: relative;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .header {
+        background-position: 50%;
+        height: 412px;
+    }
+
+    .text-header {
+        max-width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .container-padding {
+        padding-top: 0%;
+    }
+
+    .img-info {
+        height: 100% !important;
+        width: 100% !important;
+    }
 }
